@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:id="@+id/imageHub"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:tint="#7F000000"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/titleHub"
+                android:gravity="center_horizontal"
+                app:layout_constraintTop_toTopOf="@+id/imageHub"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:layout_marginTop="60dp"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                tools:text="Paris" />
+
+            <TextView
+                android:id="@+id/dateHub"
+                android:gravity="center_horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/titleHub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:layout_marginTop="35dp"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                tools:text="Paris" />
+
+            <TextView
+                android:id="@+id/subTitleHub"
+                app:layout_constraintBottom_toBottomOf="@+id/imageHub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:fontFamily="sans-serif"
+                android:padding="5dp"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                tools:text="Paris" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
